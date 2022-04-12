@@ -1,0 +1,233 @@
+.bold {
+  font-weight: bold;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container .info {
+  height: 300px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background-color: purple;
+  font-size: 40px;
+  color: white;
+}
+
+.container .product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .image-div {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.container .image-div img {
+  width: 600px;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.container .image-div p, .container .image-div h5 {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 40px;
+  color: white;
+}
+
+.container .image-div h5 {
+  font-size: 30px;
+  top: 78%;
+  font-weight: lighter;
+}
+
+.container .page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .page-wrapper .page {
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.container .page-wrapper .page-selected {
+  background-color: grey;
+}
+
+.backdrop {
+  z-index: 2;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.664);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.backdrop-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  width: 450px;
+  border: 1px solid lightgray;
+  background-color: white;
+  position: fixed;
+  top: -200px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 5;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.modal-container-open {
+  top: 50%;
+}
+
+.modal-container .modal-title {
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal-container .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal-container .modal-body input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.modal-container .modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-container .modal-footer button {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 35px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.modal-container .modal-footer .cancel {
+  background-color: aqua;
+}
+
+.modal-container .modal-footer .order {
+  margin-right: 10px;
+  background-color: greenyellow;
+}
+
+.accordion-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.accordion-container .accordion-title {
+  padding: 20px;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  border: 1px solid lightgray;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.accordion-container .accordion-title:hover {
+  background-color: #dad9d9;
+}
+
+.accordion-container .accordion-body {
+  border: 1px solid lightgray;
+  padding: 0px;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.accordion-container .accordion-body-open {
+  padding: 20px;
+  max-height: 200px;
+  overflow: auto;
+}
+/*# sourceMappingURL=index.css.map */
